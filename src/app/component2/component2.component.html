@@ -1,3 +1,12 @@
-<h2>{{parentData1}}</h2>
+<p>
+</p>
+<h2>{{parentData1 | titlecase}}</h2>
+<!-- <button>show</button> -->
+<p>inside child</p>
+<!-- <button (click)=show(parentData1)>show</button> -->
+
+
 <p></p>
-<button (click)="fireEvent()">show data</button>
+
+<input #myid2 type="text" placeholder="child to parent">
+<button (click)="fireEvent(myid2.value)">save</button>

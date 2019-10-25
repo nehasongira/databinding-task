@@ -1,10 +1,14 @@
 <!-- case 1 -->
-<input #myid type="text" value="print on console">
+<input #myid type="text" placeholder="print on console">
 <button (click)=show(myid.value)>show</button>
 <p></p>
 <!-- case2 -->
 <input [(ngModel)]="name1" type="text">
 <p>{{name1}}</p>
+<!-- case3 -->
+<input #myid1 type="text" placeholder="from parent to child">
+<button (click)=show(myid1)>save</button>
 
-<app-component2 (childEvent)="msg=$event" [parentData]="child"></app-component2>
+
+<app-component2 (childEvent)="msg=$event" [parentData]="manager"></app-component2>
 <h3>{{msg}}</h3>

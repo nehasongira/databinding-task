@@ -9,9 +9,11 @@ export class Component1Component implements OnInit {
     public child="from parent to child"
   public name1="";
   public msg="";
-  show(value)
+  public manager="";
+  public show(value)
   {
     console.log(value);
+    this.manager=value.value;
   }
   constructor() { }
 

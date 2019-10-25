@@ -10,12 +10,13 @@ export class Component2Component implements OnInit {
   // case3
    @Input('parentData') public parentData1 ;
    @Output() public childEvent=new EventEmitter();
+  
   constructor() { }
 
   ngOnInit() {
   }
-  fireEvent()
+  fireEvent(value)
   {
-    this.childEvent.emit('from child to parent');
+    this.childEvent.emit(value);
   }
 }
