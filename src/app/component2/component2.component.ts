@@ -8,8 +8,8 @@ import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 })
 export class Component2Component implements OnInit {
   // case3
-   @Input('parentData') public parentData1 ;
-   public msg="";
+  // @Input('parentData') public parentData1 ;
+   //public msg="";
 
   @Output() public childEvent1=new EventEmitter();
    constructor() { }
@@ -18,7 +18,7 @@ export class Component2Component implements OnInit {
   }
   fireEvent1()
   {
-    this.childEvent1.emit(this.msg);
+    this.childEvent1.emit('from component 2');
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit,Output,EventEmitter } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-component3',
@@ -7,14 +7,10 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 })
 export class Component3Component implements OnInit {
   
-  @Output() public childEvent=new EventEmitter();
+  @Input('parentData') public parentData1;
   constructor() { }
 
   ngOnInit() {
   }
-  fireEvent()
-  {
-    this.childEvent.emit('from child to grandparent');
-  }
-
+  
 }

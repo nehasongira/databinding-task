@@ -7,4 +7,5 @@
 <p>{{name1}}</p>
 
 <app-component2 (childEvent1)="msg=$event"></app-component2>
-<h2>{{msg}}</h2>
+<app-component3 [parentData]="msg"></app-component3>
+<!-- <h2>{{msg}}</h2> -->
