@@ -9,13 +9,16 @@ import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 export class Component2Component implements OnInit {
   // case3
    @Input('parentData') public parentData1 ;
-   @Output() public childEvent=new EventEmitter();
-  constructor() { }
+   public msg="";
+
+  @Output() public childEvent1=new EventEmitter();
+   constructor() { }
 
   ngOnInit() {
   }
-  fireEvent()
+  fireEvent1()
   {
-    this.childEvent.emit('from child to parent');
+    this.childEvent1.emit(this.msg);
   }
+
 }

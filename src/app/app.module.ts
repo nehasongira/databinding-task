@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { Component1Component } from './component1/component1.component';
 import { Component2Component } from './component2/component2.component';
+import { Component3Component } from './component3/component3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     Component1Component,
-    Component2Component
+    Component2Component,
+    Component3Component
   ],
   imports: [
     BrowserModule,
