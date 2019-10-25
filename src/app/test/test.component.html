@@ -1,0 +1,15 @@
+<p>test works!</p>
+<input type="text" value="{{name}}">
+<input #myid type="text">
+<button (click)=show(myid.value)>show</button>
+<button (click)="onclick()">greet</button>
+
+<input [(ngModel)]="name1" type="text">
+<p>{{name1}}</p>
+
+<h2 *ngIf="display; else elseblock">
+    done
+</h2>
+<ng-template #elseblock>
+    <h2>is hidden</h2>
+</ng-template>

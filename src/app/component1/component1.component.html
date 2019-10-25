@@ -1,0 +1,10 @@
+<!-- case 1 -->
+<input #myid type="text" value="print on console">
+<button (click)=show(myid.value)>show</button>
+<p></p>
+<!-- case2 -->
+<input [(ngModel)]="name1" type="text">
+<p>{{name1}}</p>
+
+<app-component2 (childEvent)="msg=$event" [parentData]="child"></app-component2>
+<h3>{{msg}}</h3>
