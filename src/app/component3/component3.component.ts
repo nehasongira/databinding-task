@@ -12,9 +12,9 @@ export class Component3Component implements OnInit {
 
   ngOnInit() {
   }
-  fireEvent()
+  fireEvent(value)
   {
-    this.childEvent.emit('from child to grandparent');
+    this.childEvent.emit(value);
   }
 
 }

@@ -1,1 +1,2 @@
-<<button (click)="fireEvent()">show 1</button>
+<input #myid3 type="text" placeholder="from child to grandpa">
+<button (click)="fireEvent(myid3.value)">show 1</button>
